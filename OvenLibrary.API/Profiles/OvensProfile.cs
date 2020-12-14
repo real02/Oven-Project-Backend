@@ -10,8 +10,8 @@ namespace OvenLibrary.API.Profiles
     {
         public OvensProfile()
         {
-            CreateMap<Entities.Oven, Models.OvenDto>();
-            CreateMap<Models.OvenDto, Entities.Oven>();
+            CreateMap<Entities.Oven, Models.OvenForCreationDto>();
+            CreateMap<Models.OvenForCreationDto, Entities.Oven>();
             CreateMap<Models.OvenForUpdateDto, Entities.Oven>();
         }
     }

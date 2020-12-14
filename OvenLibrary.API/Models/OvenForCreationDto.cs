@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace OvenLibrary.API.Models
 {
-    public class OvenForUpdateDto
+    public class OvenForCreationDto : OvenForManipulationDto
     {
     }
 }

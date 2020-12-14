@@ -45,7 +45,7 @@ namespace OvenLibrary.API.Controllers
         }
 
         [HttpPost]
-        public ActionResult<Entities.Oven> AddOven(Models.OvenDto oven)
+        public ActionResult<Entities.Oven> AddOven(Models.OvenForCreationDto oven)
         {
             var ovenEntity = _mapper.Map<Entities.Oven>(oven);
             _ovenRepository.AddOven(ovenEntity);

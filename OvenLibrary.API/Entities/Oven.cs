@@ -14,6 +14,7 @@ namespace OvenLibrary.API.Entities
         public Int64 OvenId { get; set; }
 
         [Required]
+        [MaxLength(100)]
         public string Address { get; set; }
 
         public ICollection<Measurement> Measurements { get; set; }
